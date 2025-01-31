@@ -4,8 +4,7 @@ int main(){
 
     int n,k,result=0;
     scanf("%d",&n);
-    printf(" ");
-    scanf("%d\n",&k);
+    scanf("%d",&k);
     
     char score[n];
     for(int i = 0; i <n; i++){
