@@ -4,39 +4,27 @@
 int main() {
     int t;
     scanf("%d", &t);
-
-    for (int i = 0; i < t; i++) {
+    while (t--) {
         int n;
+        char s[11];
         scanf("%d", &n);
-        
+        scanf("%s", s);
+
         if (n != 5) {
             printf("NO\n");
             continue;
         }
 
-        char str[6];
-        scanf("%s", str);
-
-        int tCount = 0, iCount = 0, mCount = 0, uCount = 0, rCount = 0;
-
-        for (int j = 0; j < 5; j++) {
-            if (str[j] == 'T') tCount++;
-            else if (str[j] == 'i') iCount++;
-            else if (str[j] == 'm') mCount++;
-            else if (str[j] == 'u') uCount++;
-            else if (str[j] == 'r') rCount++;
-            else {
-                tCount = -1; 
-                break;
-            }
+        int freq[256] = {0};
+        for (int i = 0; i < n; i++) {
+            freq[s[i]]++;
         }
 
-        if (tCount == 1 && iCount == 1 && mCount == 1 && uCount == 1 && rCount == 1) {
+        if (freq['T'] == 1 && freq['i'] == 1 && freq['m'] == 1 && freq['u'] == 1 && freq['r'] == 1) {
             printf("YES\n");
         } else {
             printf("NO\n");
         }
     }
-
     return 0;
 }
