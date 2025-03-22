@@ -3,10 +3,10 @@
 
 int main(){
 
-    // int t;
-    // scanf("%d",&t);
+    int t;
+    scanf("%d",&t);
 
-    // for(int i = 0; i < t; i++){
+    for(int i = 0; i < t; i++){
         
         int n;
         scanf("%d",&n);
@@ -16,21 +16,24 @@ int main(){
         scanf("%s",str1);
         scanf("%s",str2);
 
-        // for(int j = 0; j < n; j++){
-        //     if(str1[j] == 'G'){
-        //         str1[j] == 'B';
-        //     }
-        // }
-        // for(int j = 0; j < n; j++){
-        //     if(str2[j] == 'G'){
-        //         str2[j] == 'B';
-        //     }
-        // }
+        for(int j = 0; j < n; j++){
+            if(str1[j] == 'G'){
+                str1[j] = 'B';
+            }
+        }
+        for(int j = 0; j < n; j++){
+            if(str2[j] == 'G'){
+                str2[j] = 'B';
+            }
+        }
         int a = strcmp(str1,str2);
-        printf("%d",a);
-
-
-    // }
+        if(a == 0){
+            printf("Yes\n");
+        }else{
+            printf("No\n");
+        }
+        
+    }
 
     return 0;
 
