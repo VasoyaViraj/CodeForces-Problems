@@ -3,5 +3,6 @@
 
 # Ignore all folders
 /.vscode
+/extra
 
 01_LIBRABY.c
