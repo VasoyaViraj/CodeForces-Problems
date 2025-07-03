@@ -1,4 +1,1 @@
-nt t;
-    cin >> t;
-    
-    while(t--){
+isSkipped == 1
