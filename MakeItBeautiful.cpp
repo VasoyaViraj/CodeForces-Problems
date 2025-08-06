@@ -18,7 +18,7 @@ int main() {
     // while(t--){
         int n;
         cin >> n;
-d
+
         vector<int> vec(n);
         for(auto& x : vec) cin >> x;
 

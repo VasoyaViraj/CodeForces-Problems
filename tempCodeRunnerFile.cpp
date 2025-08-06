@@ -1,1 +1,1 @@
-isSkipped == 1
+hile(findMax(vec,c) != 0
