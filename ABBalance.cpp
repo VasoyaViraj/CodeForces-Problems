@@ -12,11 +12,14 @@ int main() {
     cin >> t;
     
     while(t--){
-        int n;
-        cin >> n;
+        string s;
+        cin >> s;
 
-        
+        if(s.front() != s.back()){
+            s.front() = ((s.front() == 'a') ? 'b' : 'a');
+        }
 
+        cout << s << "\n";
     }
     
     return 0;
